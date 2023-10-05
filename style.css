@@ -1,82 +1,92 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap');
 
-body{
-    background: #9c9c9c;
+body {
+  background: #9c9c9c;
+  font-family: 'Poppins', sans-serif;
 }
 
-.main{
-    width: 700px;
-    max-width: 70%;
-    margin: 100px auto;
-    display:flex;
-    gap: 5px;
-   
-}  
+.container {
+  width: 80%;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section {
+  flex-basis: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+}
 
 .team-members {
-    margin-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .team-members h2 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 24px;
-    margin-bottom: 20px;
-    width: 100%;
-  }
-  
-  .team-members .team {
-    flex-basis: 50%;
-    margin-bottom: 40px;
-  }
-  
-  .team-members .team img {
-    width: 100%;
-    max-width: 250px;
-  }
-  
-  .team-members .team .position {
-    font-family: 'PT Serif', serif;
-    font-size: 12px;
-  }
-  
-  .team-members .team .name {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 18px;
-  }
-  
-  /* Estilizações para a seção "Experiments" */
-  .experiments {
-    margin-top: 50px;
-  }
-  
-  .experiments h2 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .experiments .experiment-list {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .experiments .experiment-list li {
-    margin-bottom: 10px;
-  }
-  
-  .experiments .experiment-list li a {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  .experiments .experiment-list li a:hover {
-    color: #FF5733;
-  }
-  
-  /* ... (seu CSS existente) ... */
-  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team-members h2 {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 30px;
+  position: absolute;
+  top: 140px;
+}
+
+.team {
+  flex-basis: 20%;
+  padding: 10px;
+  margin: 30px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: justify;
+}
+
+.team img {
+  width: 100%;
+  max-width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 20%;
+  border: 5px solid #fff;
+}
+
+.team .position {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.team .name {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.experiments {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.experiments h2 {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.experiments .experiment-list {
+  list-style: none;
+  padding: 0;
+}
+
+.experiments .experiment-list li {
+  margin-bottom: 10px;
+}
+
+.experiments .experiment-list li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.experiments .experiment-list li a:hover {
+  color: #FF5733;
+}
