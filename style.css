@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+body{
+    background: #9c9c9c;
+}
+
+.main{
+    width: 700px;
+    max-width: 70%;
+    margin: 100px auto;
+    display:flex;
+    gap: 5px;
+   
+}  
+
+.team-members {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .team-members h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .team-members .team {
+    flex-basis: 50%;
+    margin-bottom: 40px;
+  }
+  
+  .team-members .team img {
+    width: 100%;
+    max-width: 250px;
+  }
+  
+  .team-members .team .position {
+    font-family: 'PT Serif', serif;
+    font-size: 12px;
+  }
+  
+  .team-members .team .name {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  
+  /* Estilizações para a seção "Experiments" */
+  .experiments {
+    margin-top: 50px;
+  }
+  
+  .experiments h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .experiments .experiment-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .experiments .experiment-list li {
+    margin-bottom: 10px;
+  }
+  
+  .experiments .experiment-list li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .experiments .experiment-list li a:hover {
+    color: #FF5733;
+  }
+  
+  /* ... (seu CSS existente) ... */
+  
