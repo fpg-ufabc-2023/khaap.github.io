@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+		<title>Eu sou multimídia com…</title>
+		<style>
+			body {
+				text-align: center;
+  				/* margin: auto; */
+			}
+			.profile-pic {
+				width: 290px;
+			}
+			.subtitle {
+				font-weight: bold;
+			}
+			ul {
+  				margin: auto;
+				/* margin-left: 25%; */
+				padding: 20px;
+				text-align: justify;
+			}
+			.thumb {
+				width: 150px;
+  				margin: auto;
+			}
+			.thumb-2 {
+				width: 190px;
+  				margin: auto;
+			}
+			.title {
+				font-family: 'Shadows Into Light', cursive;
+				font-style: italic;
+				font-size: 50px;
+				color:darkmagenta;
+			}
+			.grid-container {
+				display: grid;
+				width: 600px;
+				margin: auto;
+				column-gap: 10px;
+			}
+			.grid-1 {
+				grid-template: auto / 600px;
+				row-gap: 19px;
+			}
+			.grid-2 {
+				grid-template: auto / 295px 295px;
+				align-items: center;
+			}
+			.grid-3 {
+				grid-template: auto / 200px 200px 200px;
+			}
+			.grid-fotos {
+				align-items: center;
+				row-gap: 19px;
+			}
+			.item_title {
+				grid-column: 1 / 4
+			}
+			p {
+				text-align: justify;
+				margin: 10px;
+			}
+			audio {
+				margin: auto;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 class="title">Eu sou gráfico com…</h1>
+		<div class="grid-container grid-2">
+			<div class="frame">
+				<img class="profile-pic" src="./figure/IMG_20210824_152140_976.jpg" alt="Foto Heitor Rodrigues">
+			</div>
+			<div class="frame">
+				<img class="profile-pic" src="./figure/profile.png" alt="Avatar para Heitor Rodrigues">
+			</div>
+		</div>
+		<hr>
+		<div>
+			<h2>Jogos gráficos</h2>
+			<div class="grid-container grid-3">
+				<div>
+					<p>
+						<span class="subtitle">Jogo favorito:</span> Portal 2. O jogador controla a protagonista, Chell, de uma perspectiva de primeira-pessoa durante o seu desafio de passar por uma série de salas usando a "Aperture Science Handheld Portal Device" ("ASHPD" ou "Portal Gun")
+					</p>
+				</div>
+				<div>
+					<img class="thumb" src="./figure/Portal-2.jpg" alt="Capa do livro A Corte do Ar">
+				</div>
+				<div class="grid-idem">
+					<span class="subtitle">Gêneros favoritos</span>
+					<ul>
+						<li>Aventura</li>
+						<li>Simulação</li>
+						<li>Índie</li>
+						<li>Casual</li>
+						<li>Puzzle</li>
+					</ul>
+				</div>
+			  </div>
+		</div>
+		<hr>
+		<div>
+			<h2>Filmes</h2>
+			<div class="grid-container grid-3">
+				<div>
+					<p>
+						<span class="subtitle">Filme favorito:</span> Dinotopia. A história de dois irmão que sofrem um acidente aéreo e descobrem uma terra onde os dinossauros não foram extintos, e convivem pacificamente com humanos.
+					</p>
+				</div>
+				<div>
+					<img class="thumb" src="./figure/dinotopia.jpg" alt="Poster do livro A Corte do Ar">
+				</div>
+				<div class="grid-idem">
+					<span class="subtitle">Gêneros favoritos</span>
+					<ul>
+						<li>Fansasia</li>
+						<li>Aventura</li>
+						<li>Suspense</li>
+						<li>Drama</li>
+						<li>Ação</li>
+						<li>Terror</li>
+					</ul>
+				</div>
+			  </div>
+		</div>
+		<hr>
+		<div>
+			<h2>Minhas Fotos</h2>
+			<div class="grid-container grid-3 grid-fotos">
+				<div class="grid-item item_title">
+					<p>Sempre gostei de fotografia, nos últimos anos, tenho explorando a relação de luz e sombra dos cenários. Estas são algumas das que tirei neste período. Também tenho interesse em detalhes, coisas que passariam despercebidas ao olhar.</p>
+				</div>
+				<div>
+					<img class="thumb-2" src="./figure/20160401_170707.jpg">
+				</div>
+				<div>
+					<img class="thumb-2" src="./figure/20160321_093222.jpg">
+				</div>
+				<div>
+					<img class="thumb-2" src="./figure/20170122_171603.jpg">
+				</div>
+
+				<div>
+					<img class="thumb-2" src="./figure/20160613_152708.jpg">
+				</div>
+				<div>
+					<img class="thumb-2" src="./figure/20160618_120341_HDR.jpg">
+				</div>
+				<div>
+					<img class="thumb-2" src="./figure/20161006_092807.jpg">
+				</div>
+
+				<div>
+					<img class="thumb-2" src="./figure/IMG_20180726_073336_297.jpg">
+				</div>
+				<div>
+					<img class="thumb-2" src="./figure/IMG_20210124_161355_873.jpg">
+				</div>
+				<div>
+					<img class="thumb-2" src="./figure/DSC_0218.JPG">
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div>
+			<h2>Um áudio</h2>
+			<div class="grid-container grid-1">
+				<p class="solto">
+					Este arquivo de áudio foi gerado por um conversor de texto em áudio, para a frase de entrada "Este é um arquivo de áudio para a matéria de Fundamentos de Processamento Gráfico feito por Heitor Rodrigues".
+				</p>
+				<audio controls>
+					<source src="./figure/audio.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+		</div>
+		<hr>
+		<div>
+			<h2>Um vídeo</h2>
+			<div class="grid-container grid-1">
+				<p class="solto">
+					Este é um timelapse gravado durante uma tarde de Setembro, registrando a movimentação dos carros de um cruzamento de São Paulo.
+				</p>
+				<video width="600" controls>
+					<source src="./figure/video.mp4" type="video/mp4">
+				</video>
+			</div>
+		</div>
+		<hr>
+		<div>
+			<h2>Um vídeo do YouTube</h2>
+			<iframe width="600" height="400" src="https://www.youtube.com/embed/ga8PnHqbnpk">
+			</iframe>
+		</div>
+	</body>
+</html>
+
+
+
