@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap');
 
 body {
-  background: #9c9c9c;
+  background: #e7e7e7;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -38,7 +38,7 @@ body {
   padding: 10px;
   margin: 30px;
   background: #fff;
-  border-radius: 10px;
+  border-radius: 25px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: justify;
 }
@@ -89,4 +89,25 @@ body {
 
 .experiments .experiment-list li a:hover {
   color: #FF5733;
+}
+
+.main-work{
+  margin: 0 auto 0 auto;
+}
+
+.main-work tr th{
+  border-radius: 15px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #333;
+  border-bottom-width: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.main-work tr td{
+  border-radius: 15px;
+  border-style: dashed;
+  border-width: 2px;
+  border-color: #333;
 }

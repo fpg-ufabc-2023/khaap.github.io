@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functional System Modeling - Nuclear Decay Chain Interactive Graphic System</title>
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif;">
+    <div style="justify-content: center; margin-left: auto;">
+        <h2 id="title">Functional System Modeling</h2>
+        <h4 id="sub-title">Nuclear Decay Chain Interactive Graphic System (NDCIGS)</h4>
+    </div>
+    <hr>
+    <label for="lang" id="lang-label">Choose your language:</label>
+
+    <select name="langs" id="langs" onclick="">
+        <option value="eng">English</option>
+        <option value="pt-br">Portugu&ecirc;s (Brasil)</option>
+    </select> 
+
+    <div>
+        <p id="intro"></p>
+        <img src="../img/decay-chain.png" alt="decay chain" style="justify-content: center; text-align: center; margin-left: auto; margin-right: auto;">    
+    </div>
+    <hr>
+
+    <div>
+        <p id="system-desc"></p>
+        <img src="../img/FPG - MF Diagrama.jpg" alt="System Diagram">
+    </div>
+
+    <div>
+        <p id="interactions"></p>
+        <img src="" alt="">
+    </div>
+    <hr>
+
+    <script>
+        var lang = "eng";
+        let intro = "In nuclear science, a decay chain is the representation of the decay of a given radioactive element until its last transmutation that results in a stable element at the end of the chain. This representation contains all the main particles emmited during the decay process. Consider one of the most famous nuclides: U-235, used in many nuclear reactors worldwide as main fuel. Its decay chain is shown in the diagram below:";
+        document.getElementById('intro').innerText = intro;
+        let sys_desc = "This project relays on a graphic system to display a decay chain of a given nuclide (if exists). User can enter with atomic number and, as shown in the diagram below, the system return a 3D representation of the atom (unstable). For the rest of the steps, user can switch to other nuclides representation (following the main decay chain, e.g. 235-U -> 234-Th and so on).";
+        document.getElementById('system-desc').innerText = sys_desc;
+        let interactions =  "On the interactive aspect of the system, users can input data in the main screen (atomic number) and for the other steps, can use the arrow keys to change between different nuclides. Notice that there is some nuclides that can decay in two different elements, for those cases, user can use the left arrow key to Alpha decay and right arrow key to Beta decay.";
+        document.getElementById('interactions').innerText = interactions;
+        var langs = document.getElementById('langs');
+        langs.addEventListener('change', function () {
+            var selected = this.options[this.selectedIndex];
+            lang = selected.getAttribute('value');
+            switch(lang){
+                case "pt-br":
+                    document.getElementById('title').innerText = "Modelagem Funcional do Sistema";
+                    document.getElementById('sub-title').innerText = "Sistema Interativo de Cadeia de Decaimento Nuclear (SICDN)";
+                    document.getElementById('lang-label').innerText = "Escolha sua lingua: ";
+                    document.getElementById('intro').innerText = "Em ciência nuclear, uma cadeia de decaimento é a representação do decaimento de um determinado elemento radioativo até a sua última trasmutação que resulta em um elemento estável ao fim da cadeia. Essa representação contém todas as principais partículas emitidas durante o processo de decaimento.";
+                    document.getElementById('system-desc').innerText = "Este projeto consiste em um sistema gráfico para exibir uma cadeia de decaimento de um determinado nuclídeo (se existir). O usuário pode entrar com número atômico e, como mostrado no diagrama abaixo, o sistema retorna uma representação 3D do átomo (instável). Para o resto das etapas, o usuário pode alternar para outras representações de nuclídeos (seguindo a cadeia de decaimento principal, por exemplo, 235-U -> 234-Th e assim por diante).";
+                    document.getElementById('interactions').innerText = "No aspecto interativo do sistema, os usuários podem inserir dados na tela principal (número atômico) e para as outras etapas, podem usar as teclas de seta para alternar entre diferentes nuclídeos. Observe que existem alguns nuclídeos que podem decair em dois elementos diferentes, para esses casos, o usuário pode usar a tecla de seta para a esquerda para o decaimento Alpha e a tecla de seta para a direita para o decaimento Beta.";
+                    break;
+                case "eng":
+                    document.getElementById('title').innerText = "Functional System Modeling";
+                    document.getElementById('sub-title').innerText = "Nuclear Decay Chain Interactive Graphic System (NDCIGS)";
+                    document.getElementById('lang-label').innerText = "Choose your language: ";
+                    document.getElementById('intro').innerText = intro;
+                    document.getElementById('system-desc').innerText = sys_desc;
+                    document.getElementById('interactions').innerText = interactions;
+                    break;
+                default:
+                    console.log(lang);
+            }
+        });
+    </script>
+</body>
+</html>
