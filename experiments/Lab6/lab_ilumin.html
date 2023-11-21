@@ -1,0 +1,93 @@
+<!DOCTYPE=HTML>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Lab Iluminação</title>
+	</head>
+	<body>
+		<h1>Laboratório 06 - Iluminação</h1>
+		<hr>
+		<h3>Projeto: "material.c"</h3>
+		<img src="./material.png" width=375px height=300px></img>
+		<p>As propriedades de fonte de Luz foram descritas no programa através do bloco de código abaixo: <br> <br>
+		void init(void) <br>
+		{ <br>
+		   GLfloat ambient[] = { 0.0, 0.0, 0.0, 1.0 }; <br>
+		   GLfloat diffuse[] = { 1.0, 1.0, 1.0, 1.0 }; <br>
+		   GLfloat specular[] = { 1.0, 1.0, 1.0, 1.0 }; <br>
+		   GLfloat position[] = { 0.0, 3.0, 2.0, 0.0 }; <br>
+		   GLfloat lmodel_ambient[] = { 0.4, 0.4, 0.4, 1.0 }; <br>
+		   GLfloat local_view[] = { 0.0 }; <br><br>
+
+		   glClearColor(0.0, 0.1, 0.1, 0.0); <br>
+		   glEnable(GL_DEPTH_TEST); <br>
+		   glShadeModel(GL_SMOOTH); <br><br>
+
+		   glLightfv(GL_LIGHT0, GL_AMBIENT, ambient);<br>
+		   glLightfv(GL_LIGHT0, GL_DIFFUSE, diffuse);<br>
+		   glLightfv(GL_LIGHT0, GL_POSITION, position);<br>
+		   glLightModelfv(GL_LIGHT_MODEL_AMBIENT, lmodel_ambient);<br>
+		   glLightModelfv(GL_LIGHT_MODEL_LOCAL_VIEWER, local_view);<br><br>
+
+		   glEnable(GL_LIGHTING);<br>
+		   glEnable(GL_LIGHT0);<br>
+		}<br>
+		
+		Tendo definido os vetores referentes às luzes, define-se o modo de shading como <strong>GL_SMOOTH</strong> <i>(suavizado)</i> e as luzes são descritas utilizando os vetores declarados através das chamadas das funções <i>glLightfv</i> e <i>glLightModelfv</i>.
+		</p>
+		<ul>
+			<li>Os valores das propriedades de luz são [0,0,0,1], [1,1,1,1], [1,1,1,1], [0,3,2,0], [0.4, 0.4, 0.4, 1.0] para as luzes ambiente, difusa, especular, posicao e ambiente modelo, respectivamente.</li>
+			<li>No modelo de iluminação, foi habilitado a luz de modelo ambiente como um cinza escuro de opacidade 100%, bem como o local viewer no ponto 0.</li>
+			<li>As esferas foram descritas com as seguintes propriedades de materiais, na ordem: 
+				<ol>
+					<li>Apenas reflexão difusa</li>
+					<li>Reflexão difusa e especular + pouco brilho metálico (shininess)</li>
+					<li>Reflexão difusa e especular + alto brilho metálico (shininess)</li>
+					<li>Reflexão difusa e emissão</li>
+					<li>Reflexão difusa e luz ambiente</li>
+					<li>Reflexão difusa, especular e luz ambiente + pouco brilho metálico (shininess)</li>
+					<li>Reflexão difusa, especular e luz ambiente + alto brilho metálico (shininess)</li>
+					<li>Reflexão difusa, luz ambiente e emissão</li>
+					<li>Luz ambiente colorida e reflexão difusa</li>
+					<li>Luz ambiente colorida, reflexão difusa e especular + pouco brilho metálico (shininess)</li>
+					<li>Luz ambiente colorida, reflexão difusa e especular + alto brilho metálico (shininess)</li>
+					<li>Luz ambiente colorida, reflexão difusa e emissão</li>
+				</ol>
+			</li>
+		</ul>
+		
+		<hr>
+		
+		<h3>Projeto: "movelight.c"</h3>
+		<p>Neste exemplo, é renderizado um toróide ao centro da tela. É possível interagir com a iluminação fazendo-a rotacionar no eixo x ao clicar na tela.<br>Abaixo uma sequencia de imagens que representam a rotação de cada clique:</p>
+		<div>
+			<img src="./torus1.png" width=150px height=150px/>
+			<img src="./torus2.png" width=150px height=150px/>
+			<img src="./torus3.png" width=150px height=150px/>
+			<img src="./torus4.png" width=150px height=150px/>
+			<img src="./torus5.png" width=150px height=150px/>
+			<img src="./torus6.png" width=150px height=150px/> 
+			<img src="./torus7.png" width=150px height=150px/>
+			<img src="./torus8.png" width=150px height=150px/>
+			<img src="./torus9.png" width=150px height=150px/>
+			<img src="./torus10.png" width=150px height=150px/>
+			<img src="./torus11.png" width=150px height=150px/>
+			<img src="./torus12.png" width=150px height=150px/>
+		</div>
+		<hr>
+		
+		<h3>Exercicios para entrega</h3>
+		<p>1) Modifique o exemplo do 1º. Projeto: “light.c” da seguinte forma:
+- mude a fonte de luz para que seja uma luz colorida, e
+- adicione uma segunda fonte de luz
+2) Modifique o exemplo do 1º. Projeto: “light.c” da seguinte forma:
+- mude a fonte de luz para que seja um Spot light. Estude sobre isso no Red Book.
+3) Baseado o exemplo do 2º. Projeto: “material.c” crie uma cena com dois objetos simples
+mas diferentes da biblioteca glut, e com propriedades de materiais totalmente distintas entre
+si. Realize dois casos de posição de fonte de luz para diferenciar e evidenciar as propriedades.
+Salve a imagem de cada caso, para enviar junto com o codigo.</p>
+
+		<hr>
+		<a href="../../index.html">Página Inicial</a>
+	</body>
+</html>
