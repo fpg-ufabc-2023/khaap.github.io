@@ -10,7 +10,19 @@
     <h2>Map e Textura</h2>
     <hr>
     <ul>
-    
+        <li>
+            <p> O Mapeamento de um objeto para aplicação de textura é sem dúvida uma das partes mais importantes para uma modelagem, pois esta é responsável por trazer mais fidelidade à imagem em questão
+            </p>
+            <p>Os passos para se adicionar uma textura são: Especificar a textura, indicar como a textura deverá ser aplicada, habilitar o texture mapping, desenhar a cena.
+            </p>
+        </li>
+        <li>
+            <p> O Mapeamento de um objeto para aplicação de textura é sem dúvida uma das partes mais importantes para uma modelagem, pois esta é responsável por trazer mais fidelidade à imagem em questão
+            </p>
+            <p>Os passos para se adicionar uma textura são: Especificar a textura, indicar como a textura deverá ser aplicada, habilitar o texture mapping, desenhar a cena.
+            </p>
+            <img src="../img/lab3-model.png" alt="model" width="275px" height="275px">
+        </li>
     </ul>
     <hr>
     <h5>Exercicios para entrega</h5>
@@ -19,6 +31,12 @@
             <strong>Modifique o exemplo do 3º. Projeto: “textureRGB.c” da seguinte forma:</strong>
             <p>- adicione a geração de duas texturas tal qual é feita no 2º projeto “texbind.c”, e
                - utilize cada uma delas numa face diferente do objeto.</p>
+            
+            <p>Para modificar o código do projeto textureRGB.c de maneira a adicionar duas texturas e aplicá-las em faces diferentes do objeto, precisamos de algumas alterações. Vou destacar os passos principais e as modificações de código relevantes.
+                Criação das Texturas: Precisamos criar duas texturas diferentes. No exemplo texbind.c, isso é feito na função makeCheckImages e as texturas são armazenadas no array texName. Vamos precisar de uma função semelhante no nosso código textureRGB.c.
+                Aplicação das Texturas: Ao desenhar cada face do objeto, precisamos especificar qual textura será aplicada. Isso é feito utilizando a função glBindTexture antes de desenhar a face.
+                Modificação no Desenho do Objeto: No loop onde as faces são desenhadas, precisamos alternar entre as texturas criadas para cada face.</p>
+
             <img src="../img/lab7-.png" alt="braco">
         </li>
     </ol>
